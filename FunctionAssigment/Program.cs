@@ -23,8 +23,8 @@
         /// <summary>
         /// check if name matches comparison
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="compareName"></param>
+        /// <param name="name">users name</param>
+        /// <param name="compareName">compare name to comparison</param>
         private static void ComparisonMatchCase(string name, string compareName)
         {
             if (name.Equals(compareName))
@@ -35,8 +35,8 @@
         /// <summary>
         /// check if name doesnt match comparison
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="compareName"></param>
+        /// <param name="name">users name</param>
+        /// <param name="compareName">compare name to comparison</param>
         private static void ComparisonIgnoringCase(string name, string compareName)
         {
             if (name.Equals(compareName, StringComparison.OrdinalIgnoreCase))
@@ -46,7 +46,7 @@
         /// <summary>
         /// check if user is 18 or younger
         /// </summary>
-        /// <param name="age"></param>
+        /// <param name="age">is user adult or not adult</param>
         private static void CheckAge(int age)
         {
             if (age >= 18)
@@ -58,8 +58,8 @@
         /// <summary>
         /// print users name and age
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="age"></param>
+        /// <param name="name">users name</param>
+        /// <param name="age">users age</param>
         private static void PrintNameAndAge(string name, int age)
         {
             Console.WriteLine($"Your name is {name} and your age is {age}.");
@@ -68,8 +68,8 @@
         /// <summary>
         /// ask users age
         /// </summary>
-        /// <param name="age"></param>
-        /// <returns></returns>
+        /// <param name="age">users age</param>
+        /// <returns>users age</returns>
         private static bool AskAge(ref int age)
         {
             bool valid = false;
@@ -87,10 +87,10 @@
         }
 
         /// <summary>
-        /// ask users name
+        /// ask users name and check if the input is valid
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="valid"></param>
+        /// <param name="name">users name</param>
+        /// <param name="valid">is name valid</param>
         private static void AskName(ref string name, ref bool valid)
         {
             while (!valid)
